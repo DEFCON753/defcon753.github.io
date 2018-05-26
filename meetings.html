@@ -1,0 +1,9 @@
+---
+layout: default
+---
+
+---[ Meetings list
+
+{% for m in site.categories.meetings %} - <a href="{{ m.url }}" title="{{ m.description }}">{{ m.title }}</a>
+{% endfor %}
+

@@ -1,0 +1,24 @@
+# Site specific settings
+title: "DEF CON 753"
+name: "DEF CON 753"
+keywords: "DEF CON GROUP, Rome"
+description: "DEF CON group @ Rome, Italy"
+#cover: "/assets/img/cover.svg"
+
+# Site general settings
+lang: "en"
+ssl: false # It will redirect to https
+
+# Media
+# Just the shortname:
+# facebook: lampiaosec # Rigth
+# facebook: facebook.com/lampiaosec # Wrong
+
+twitter: defcon753
+#facebook: 
+github: defcon753
+#google:
+
+# Build settings
+markdown: kramdown
+permalink: /:categories/:title/
