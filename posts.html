@@ -4,6 +4,6 @@ layout: default
 
 ---[ Posts list
 
-{% for p in site.categories.posts %} - <a href="{{ p.url }}" title="{{ p.description }}">{{ p.title }}</a>
+{% for p in site.categories.posts %} - <a href="{{ site.baseurl }}/{{ p.url }}" title="{{ p.description }}">{{ p.title }}</a>
 {% endfor %}
 
