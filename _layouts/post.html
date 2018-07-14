@@ -1,0 +1,9 @@
+---
+layout: default
+---
+{% assign sm = page.title.size | modulo: 2 %}{% if sm == 0 %}{% assign pad0 = 90 | minus: page.title.size | divided_by: 2 | minus: 1 %}|={% for i in (0..pad0) %}{{ "-" }}{% endfor %}=[ {{ page.title }} ]={% for i in (0..pad0) %}{{ "-" }}{% endfor %}=|
+{% else %}{% assign pad0 = 90 | minus: page.title.size | divided_by: 2 | minus: 1 %}|={% for i in (0..pad0) %}{{ "-" }}{% endfor %}=[ {{ page.title }} ]={% for i in (0..pad0) %}{{ "-" }}{% endfor %}-=|
+{% endif %}{% if page.author %}
+{% for i in (0..pad0) %}{{ " " }}{% endfor %}     by {{ page.author }}
+{% endif %}
+{{ content }}
