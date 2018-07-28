@@ -13,7 +13,6 @@
 
 pre.content {
     width: 100ch;
-    font-size: 0.9vw;
     word-wrap: break-word;
     white-space: pre-wrap;
     margin: 0 auto;
@@ -23,7 +22,11 @@ pre.content {
     padding: 10px;
 }
 
-
+@media only screen and (max-width: 100ch) {
+    pre.content {
+        font-size: 1vw;
+    }
+}
 </style>
 
 {% if site.ssl %}
