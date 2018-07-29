@@ -29,6 +29,34 @@ pre.content {
     padding: 10px;
 }
 
+body {
+    background: url({{ site.baseurl }}/bg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+/* unvisited link */
+a:link {
+    color: #be3000;
+}
+
+/* visited link */
+a:visited {
+    color: #db4805;
+}
+
+/* mouse over link */
+a:hover {
+    color: red;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
 </style>
 
 {% if site.ssl %}
