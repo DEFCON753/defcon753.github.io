@@ -1,11 +1,18 @@
 
+{% if site.ssl %}
+<script type="text/javascript">
+	if (window.location.protocol != "https:")
+		window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+</script>
+{% endif %}
+
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta 
      name='viewport' 
      content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1' 
 />
 
-<link rel="icon" type="image/x-icon" href="{{ site.url }}{{ site.baseurl }}/assets/favicon.ico">
+<link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/assets/favicon.ico">
 <title>
 	{% if page.title %}
 		{{ page.title }} - 
@@ -32,7 +39,7 @@ pre.content {
 }
 
 body {
-    background: url({{ site.url }}{{ site.baseurl }}/assets/bg.jpg); 
+    background: url({{ site.baseurl }}/assets/bg.jpg); 
     -moz-background-size: cover;
     -o-background-size: cover;
     -webkit-background-size: cover; 
@@ -61,9 +68,3 @@ a:active {
 
 </style>
 
-{% if site.ssl %}
-<script type="text/javascript">
-	if (window.location.protocol != "https:")
-		window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
-</script>
-{% endif %}
