@@ -4,7 +4,7 @@ name: "DEF CON 753"
 keywords: "DEF CON GROUP, Rome"
 description: "DEF CON group @ Rome, Italy"
 
-baseurl: "/defcon753-website"
+baseurl: ""
 #cover: "/assets/img/cover.svg"
 
 # Site general settings
