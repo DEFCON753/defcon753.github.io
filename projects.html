@@ -4,7 +4,7 @@ layout: default
 
 |=-----------------------------------------=[ Projects ]=-----------------------------------------=|<!-- title here! -->
 {% for p in site.categories.projects %}
----[ <a href="{{ site.baseurl }}/{{ p.url }}" title="{{ p.description }}">{{ p.title }}</a>
+---[ <a href="{{ site.url }}{{ site.baseurl }}/{{ p.url }}" title="{{ p.description }}">{{ p.title }}</a>
      {{ p.description }}
 {% endfor %}
 
