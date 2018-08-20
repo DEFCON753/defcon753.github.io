@@ -1,6 +1,6 @@
 # Site specific settings
-title: "DEF CON 753"
-name: "DEF CON 753"
+title: "DEF CON 11396"
+name: "DEF CON 11396"
 keywords: "DEF CON GROUP, Rome"
 description: "DEF CON group @ Rome, Italy"
 
@@ -16,9 +16,9 @@ ssl: false # It will redirect to https
 # facebook: lampiaosec # Rigth
 # facebook: facebook.com/lampiaosec # Wrong
 
-twitter: defcon753
+twitter: defcon11396
 #facebook: 
-github: defcon753
+github: defcon11396
 #google:
 
 # Build settings
