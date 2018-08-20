@@ -1,8 +1,8 @@
 # Site specific settings
-title: "DEF CON 11396"
-name: "DEF CON 11396"
+title: "DEFCON 11396"
+name: "DEFCON 11396"
 keywords: "DEF CON GROUP, Rome"
-description: "DEF CON group @ Rome, Italy"
+description: "DEF CON group 11396 @ Rome, Italy"
 
 baseurl: ""
 #cover: "/assets/img/cover.svg"
