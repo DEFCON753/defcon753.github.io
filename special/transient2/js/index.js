@@ -38,19 +38,13 @@ StarWars = (function() {
     // Context wrapper
     this.el = $(args.el);
     
-    // Audio to play the opening crawl
-    this.audio = this.el.find('audio').get(0);
-    
-    
     // The animation wrapper
     this.animation = this.el.find('.animation');
-    
     // Remove animation and shows the start screen
     this.reset();
-
-    this.audio.play();
+    
     this.el.append(this.animation);
-
+    
     // Reset the animation and shows the start screen
     $(this.audio).bind('ended', $.proxy(function() {
       this.audio.currentTime = 0;
