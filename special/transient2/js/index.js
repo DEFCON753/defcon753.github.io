@@ -56,9 +56,7 @@ StarWars = (function() {
    * Resets the animation and shows the start screen.
    */
   StarWars.prototype.reset = function() {
-    this.cloned = this.animation.clone(true);
-    this.animation.remove();
-    this.animation = this.cloned;
+    window.location = "https://defcon11396.it//meetings/may31/";
   };
 
   return StarWars;
