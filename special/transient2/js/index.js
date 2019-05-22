@@ -38,16 +38,15 @@ StarWars = (function() {
     // Context wrapper
     this.el = $(args.el);
     
+    this.audio = this.el.find('audio').get(0);
+    
     // The animation wrapper
     this.animation = this.el.find('.animation');
-    // Remove animation and shows the start screen
-    this.reset();
     
     this.el.append(this.animation);
     
     // Reset the animation and shows the start screen
     $(this.audio).bind('ended', $.proxy(function() {
-      this.audio.currentTime = 0;
       this.reset();
     }, this));
   }
