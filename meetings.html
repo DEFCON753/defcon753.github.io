@@ -1,9 +1,0 @@
----
-layout: default
----
-
-|=-----------------------------------------=[ Meetings ]=-----------------------------------------=|<!-- title here! -->
-
-{% for m in (site.categories.meetings | sort: 'date') %} - <a href="{{ site.url }}{{ site.baseurl }}{{ m.url }}" title="{{ m.description }}">{{ m.title }}</a>
-{% endfor %}
-
